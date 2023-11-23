@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		9791FBF42B100082003ACE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791FBF32B100082003ACE91 /* AppDelegate.swift */; };
 		9791FBF62B100082003ACE91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791FBF52B100082003ACE91 /* SceneDelegate.swift */; };
-		9791FBF82B100082003ACE91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791FBF72B100082003ACE91 /* ViewController.swift */; };
-		9791FBFB2B100082003ACE91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9791FBF92B100082003ACE91 /* Main.storyboard */; };
+		9791FBF82B100082003ACE91 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791FBF72B100082003ACE91 /* HomeViewController.swift */; };
 		9791FBFD2B100083003ACE91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9791FBFC2B100083003ACE91 /* Assets.xcassets */; };
 		9791FC002B100083003ACE91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9791FBFE2B100083003ACE91 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		9791FBF02B100082003ACE91 /* kratoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kratoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9791FBF32B100082003ACE91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9791FBF52B100082003ACE91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9791FBF72B100082003ACE91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9791FBFA2B100082003ACE91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9791FBF72B100082003ACE91 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9791FBFC2B100083003ACE91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9791FBFF2B100083003ACE91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9791FC012B100083003ACE91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,30 @@
 		9791FBF22B100082003ACE91 /* kratoTask */ = {
 			isa = PBXGroup;
 			children = (
+				9791FC072B1010AA003ACE91 /* Scenes */,
 				9791FBF32B100082003ACE91 /* AppDelegate.swift */,
 				9791FBF52B100082003ACE91 /* SceneDelegate.swift */,
-				9791FBF72B100082003ACE91 /* ViewController.swift */,
-				9791FBF92B100082003ACE91 /* Main.storyboard */,
 				9791FBFC2B100083003ACE91 /* Assets.xcassets */,
 				9791FBFE2B100083003ACE91 /* LaunchScreen.storyboard */,
 				9791FC012B100083003ACE91 /* Info.plist */,
 			);
 			path = kratoTask;
+			sourceTree = "<group>";
+		};
+		9791FC072B1010AA003ACE91 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9791FC082B1010B0003ACE91 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9791FC082B1010B0003ACE91 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9791FBF72B100082003ACE91 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +140,6 @@
 			files = (
 				9791FC002B100083003ACE91 /* LaunchScreen.storyboard in Resources */,
 				9791FBFD2B100083003ACE91 /* Assets.xcassets in Resources */,
-				9791FBFB2B100082003ACE91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9791FBF82B100082003ACE91 /* ViewController.swift in Sources */,
+				9791FBF82B100082003ACE91 /* HomeViewController.swift in Sources */,
 				9791FBF42B100082003ACE91 /* AppDelegate.swift in Sources */,
 				9791FBF62B100082003ACE91 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9791FBF92B100082003ACE91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9791FBFA2B100082003ACE91 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9791FBFE2B100083003ACE91 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +296,9 @@
 				INFOPLIST_FILE = kratoTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +324,9 @@
 				INFOPLIST_FILE = kratoTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
